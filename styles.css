@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reliable {
+    margin-top: 2em;
+    font-weight: 200;
+}
+
+.powered {
+    font-weight: 600;
+}
+
+main > p {
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 80%;
+    margin-top: 3em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.supervisor, .teambuilder-karma, .calculator {
+    width: 80%;
+}
+
+.supervisor, .teambuilder, .karma, .calculator {
+    /*border: 1px solid black;*/
+    box-shadow: 0px 7px 29px hsl(229, 6%, 66%);
+    min-height: 28vh;
+    position: relative;
+    border-radius: 5px;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+} 
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.h2FromCards {
+    font-size: 18px;
+    margin: 1em 0 1em 1em;
+    color: hsl(234, 12%, 34%);
+}
+
+.pFromCards {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    margin-left: 1.285em;
+}
+
+.teambuilder-karma {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 60%;
+    left: 72.5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+
+@media only screen and (max-width: 850px) {     
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
